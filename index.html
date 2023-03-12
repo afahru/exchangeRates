@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Rates Project</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="/assets/style.css">
+    <!-- Font Awesome 5.15.4-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Two input fields for input numbers -->
+    <div>
+        <label for="amount"><i class="fas fa-coins"></i> Amount:</label>
+        <input type="number" id="amount" name="amount">
+    </div>
+    <div class="currency-container">
+        <!-- Two dropdowns for currencies -->
+        <div>
+            <label for="from">From:</label>
+            <select id="from" name="from">
+                <option value="IDR">IDR</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+            </select>
+        </div>
+        <div>
+            <label for="to">To:</label>
+            <select id="to" name="to">
+                <option value="IDR">IDR</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+            </select>
+        </div>
+    </div>
+    <!-- Calculate and clear buttons -->
+    <div>
+        <button id="calculate" onclick="calculate()"><i class="fas fa-calculator"></i> Calculate</button>
+        <button id="clear" onclick="clearInput()"><i class="far fa-times-circle"></i> Clear</button>
+    </div>
+    <div>
+        <label style="margin-right: 10px;" for="result"><i class="fas fa-cash-register"></i> Exchange Rate:</label>
+        <span id="result"></span>
+    </div>
+    <!-- JS File -->
+    <script src="/assets/script.js"></script>
+</body>
+<footer>
+    <p>exchangeRates Project 2023.
+        <br>Built with <i class="fab fa-html5"></i>, <i class="fab fa-css3-alt"></i> and <i
+            class="fab fa-js-square"></i> by Muhamad Fahrurrozi.
+    </p>
+</footer>
+
+</html>
